@@ -10,7 +10,7 @@
   - name: lunching ec2 instance
     ec2:
       group_id: sg-0840085c222a117d2
-     # key_name: eng99.pem
+     # key_name: eng99
       instance_type: t2.micro
       image: ami-07d8796a2b0f8d29c
       instance_tags:

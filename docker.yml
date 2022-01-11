@@ -1,0 +1,15 @@
+
+---
+- name: docker provisioning
+  hosts: docker
+  gather_facts: true
+  become: true
+  tasks:
+  - name: update and upgrade
+    shell: sudo apt-get update -y && sudo apt-get upgrade -y
+  - name: install cURL
+    shell: sudo apt-get install curl -y
+  - name: docker install
+    shell: curl -fsSl https://get.docker.com/ | sh
+  - name: nginx
+    shell: sudo docker pull nginx

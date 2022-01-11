@@ -2,7 +2,7 @@
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-# Install
+# Install ansible
 sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible -y
 sudo apt-get install ansible -y
@@ -14,6 +14,8 @@ sudo apt install tree -y
 sudo apt install python3-pip -y
 
 # Install aws cli
+sudo apt install python
+sudo pip install --upgrade pip
 pip3 install awscli
 pip3 install boto boto3
 sudo apt-get upgrade -y
